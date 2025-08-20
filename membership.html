@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Ghana Tennis Club</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎾</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/Amended Logo.png" alt="Ghana Tennis Club Logo" class="logo-img">
+                    <span class="logo-text">Ghana Tennis Club</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html" class="active">Membership</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Membership</h1>
+                <p>Join Ghana Tennis Club and become part of our tennis community</p>
+            </div>
+        </section>
+
+        <section class="membership-categories">
+            <div class="container">
+                <h2>Membership Categories</h2>
+                <div class="membership-grid">
+                    <div class="membership-card featured">
+                        <div class="membership-icon">🎾</div>
+                        <h3>Adult Membership</h3>
+                        <div class="price">GHC 600</div>
+                        <div class="monthly-dues">+ GHC 100/monthly dues</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg1QIOMDSfwusrrpOiE5Uqvif8dsK1yg46bJfOPwfhiO_YOg/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+                    </div>
+
+                    <div class="membership-card featured">
+                        <div class="membership-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family Membership</h3>
+                        <div class="price">GHC 1,500</div>
+                        <div class="monthly-dues">+ GHC 200/monthly dues</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg1QIOMDSfwusrrpOiE5Uqvif8dsK1yg46bJfOPwfhiO_YOg/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+                    </div>
+
+                    <div class="membership-card featured">
+                        <div class="membership-icon">📝</div>
+                        <h3>Junior Membership</h3>
+                        <div class="price">+ GHC 200</div>
+                        <div class="monthly-dues">GHC 20/monthly dues</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg1QIOMDSfwusrrpOiE5Uqvif8dsK1yg46bJfOPwfhiO_YOg/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+                    </div>
+
+                    <div class="membership-card featured">
+                        <div class="membership-icon">🎓</div>
+                        <h3>Student Membership</h3>
+                        <div class="price">+ GHC 300</div>
+                        <div class="monthly-dues">GHC 50/monthly dues</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg1QIOMDSfwusrrpOiE5Uqvif8dsK1yg46bJfOPwfhiO_YOg/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Register Now</a>
+                    </div>
+
+                    <div class="membership-card featured">
+                        <div class="membership-icon">🏢</div>
+                        <h3>Corporate Membership</h3>
+                        <div class="price">GHC 5,000 </div>
+                        <div class="monthly-dues">+ GHC 500/monthly dues</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg1QIOMDSfwusrrpOiE5Uqvif8dsK1yg46bJfOPwfhiO_YOg/viewform?usp=header" target="_blank" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-benefits">
+            <div class="container">
+                <h2>Membership Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>Professional Courts</h4>
+                        <p>Access to well-maintained professional-grade tennis courts</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Expert Coaching</h4>
+                        <p>Learn from experienced and certified tennis coaches</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Tournament Access</h4>
+                        <p>Participate in club tournaments and competitions</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Community</h4>
+                        <p>Join a vibrant community of tennis enthusiasts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form (Initially Hidden) -->
+        <section class="registration-form-section" id="registrationForm">
+            <div class="container">
+                <h2>Membership Registration</h2>
+                <form class="registration-form" id="membershipForm">
+                    <div class="form-group">
+                        <label for="membershipType">Membership Type</label>
+                        <input type="text" id="membershipType" name="membershipType" readonly>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth</label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" id="occupation" name="occupation">
+                        </div>
+                    </div>
+
+                    <!-- Family Membership Additional Fields -->
+                    <div class="family-fields" id="familyFields">
+                        <h3>Family Members</h3>
+                        <div class="form-group">
+                            <label for="spouseName">Spouse Name</label>
+                            <input type="text" id="spouseName" name="spouseName">
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Children Names and Ages</label>
+                            <textarea id="children" name="children" rows="3" placeholder="Please list children's names and ages"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Student Membership Additional Fields -->
+                    <div class="student-fields" id="studentFields">
+                        <div class="form-group">
+                            <label for="institution">Educational Institution</label>
+                            <input type="text" id="institution" name="institution">
+                        </div>
+                        <div class="form-group">
+                            <label for="studentId">Student ID Number</label>
+                            <input type="text" id="studentId" name="studentId">
+                        </div>
+                    </div>
+
+                    <!-- Corporate Membership Additional Fields -->
+                    <div class="corporate-fields" id="corporateFields">
+                        <div class="form-group">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" name="companyName">
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Position/Title</label>
+                            <input type="text" id="position" name="position">
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">Designated Employees</label>
+                            <textarea id="employees" name="employees" rows="4" placeholder="Please list up to 10 employee names"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact</label>
+                        <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Name and phone number">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelForm">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ghana Tennis Club</h3>
+                    <p>Your premier tennis destination in Ghana</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="documents/GTC Rules and Regulations.pdf" target="_blank" rel="noopener">Rules & Regulations</a></li>
+                        <li><a href="documents/Draft Revised Constitution Of The Ghana Tennis Club 08.08.2025 (Version 3.0).pdf" target="_blank" rel="noopener">Constitution</a></li>
+                        <li><a href="https://ghanatennisfederation.com" target="_blank" rel="noopener">Ghana Tennis Federation</a></li>
+                        <li><a href="https://greateraccratennis.org" target="_blank" rel="noopener">Greater Accra Tennis Association</a></li>
+                        <li><a href="https://www.itftennis.com" target="_blank" rel="noopener">International Tennis Federation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/ghanatennisclub" target="_blank" rel="noopener" class="social-link">
+                            <svg viewBox="0 0 24 24" class="social-icon">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://www.instagram.com/ghanatennisclub/" target="_blank" rel="noopener" class="social-link">
+                            <svg viewBox="0 0 24 24" class="social-icon">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://x.com/GhanaTennisClub" target="_blank" rel="noopener" class="social-link">
+                            <svg viewBox="0 0 24 24" class="social-icon">
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                            </svg>
+                            X (Twitter)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ghana Tennis Club. All rights reserved.</p>
+                <div class="developer-credits">
+                    <p>Designed with <span class="love">♥</span> by <a href="https://hugheggley.com" target="_blank" rel="noopener">HughEggley Marketing Ltd</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
